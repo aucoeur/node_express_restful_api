@@ -11,6 +11,11 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello world!" });
 });
 
+// Get all users route
+app.get("/users", (req, res) => {
+  res.json({ message: "Get all users" });
+});
+
 const PORT = process.env.PORT || 4242;
 
 app.listen(PORT, () =>
