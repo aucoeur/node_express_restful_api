@@ -1,5 +1,8 @@
 # Simple Node express server with Postgres
 
+## In-Class Steps
+
+### Node Express Setup
 1. Init git repo
 2. Init package.json with `npm init`
 3. Create `index.js`
@@ -12,11 +15,11 @@
     // ... other scripts
   },
 ```
-
 7. Create express server & hello world route
 
-## Postgres Setup
-8. Create postgres database & setup `db.js`   
+### Postgres Setup
+8. Install Postgres & pgAdmin4
+9. Create postgres database & setup `db.js`   
     1. Create the DB in postgres using `psql`: 
     ```bash
     $ psql -U username
@@ -32,3 +35,5 @@
     $ psql -U username -d database_name -f seed.sql
     ```
  
+## Next Class
+- [ ] Create Create, Update, Destroy Routes
