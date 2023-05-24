@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const userController = require("./user.controller");
 
 const app = express();
 
@@ -12,9 +13,7 @@ app.get("/", (req, res) => {
 });
 
 // Get all users route
-app.get("/users", (req, res) => {
-  res.json({ message: "Get all users" });
-});
+app.get("/users", userController.getAllUsers);
 
 const PORT = process.env.PORT || 4242;
 
